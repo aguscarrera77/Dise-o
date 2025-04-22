@@ -1,0 +1,28 @@
+/*vamos a arrancar la primera linea de css con el indicador universal
+utilizo el background-color: color de fondo
+background:fondo de cualquier caja.
+font-family:la familia de la fuente.
+color:cambia el color de cualquier estructura.
+font-size:cambio tamano a la fuente.
+font-weight:ancho de la fuente.
+font-style:cambia el estilo de la fuente.*/
+* {
+
+background-color: #f4f0eb;
+}
+label {
+font-family:Arial, Helvetica, sans-serif ;
+color:cornflowerblue;
+font-weight:lighter;
+}
+
+input{
+
+  color:rgb(59, 2, 2);  
+}
+ 
+legend {
+font-size: 38px;
+font-style: normal;
+
+}
