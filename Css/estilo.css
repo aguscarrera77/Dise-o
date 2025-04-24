@@ -1,15 +1,46 @@
-/*vamos a arrancar la primera linea de css con el indicador universal
+/*vamos a arrancar la primera linea de css con el indicador universal.
+etiqueta:llama a la etiqueta directamente por el nombre.
+clase: HTML USO class(atributo) . CSSS USO  .(nombre de la clase).
 utilizo el background-color: color de fondo
 background:fondo de cualquier caja.
-font-family:la familia de la fuente.
+font-family:cambia familia de la fuente.
 color:cambia el color de cualquier estructura.
 font-size:cambio tamano a la fuente.
 font-weight:ancho de la fuente.
-font-style:cambia el estilo de la fuente.*/
+font-style:cambia el estilo de la fuente.*
+border: aplica bordes a las cajas. Propiedades:
+border-width: ancho del borde.valores px,em,hv
+border-style: estilo del borde. Valores:solid,double,dotted,dashed.
+border-color:color del borde.
+border-radius: redondea los bordes de la caja. Valores: px,%,etc.
+width: ancho de cualquier elementos o caja.
+height:alto del elemento o caja. valores pixeles,%,em,hv.
+max-width:ancho maximo que puedo darle a una caja.
+text-align: alinear los elementos en el eje horizontal. valores: left center right.
+
+*/
 * {
 
 background-color: #f4f0eb;
 }
+body{
+
+max-width: 1200px;
+
+}
+header{
+  border-width:4px ;
+  border-style: solid;
+  border-color: black;
+  width:90%;
+  
+  }
+
+.titulo-header {
+
+text-align: center;
+}
+  
 label {
 font-family:Arial, Helvetica, sans-serif ;
 color:cornflowerblue;
@@ -22,7 +53,30 @@ input{
 }
  
 legend {
-font-size: 38px;
-font-style: normal;
+font-size: 45px;
+font-style: bold;
+
+}
+
+main{
+border: 4px double blueviolet;
+width:90%;
+
+
+
+}
+
+
+footer{
+width: 90%;
+
+}
+
+.formulario {
+border-color: aquamarine;
+border-width: 4px;
+border-style: solid;
+border-radius:8px ;
+
 
 }
