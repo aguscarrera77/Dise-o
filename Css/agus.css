@@ -1,0 +1,54 @@
+/*   
+flex-direction:definir la direccion del eje para marcar el flujo de las cajas.
+valores: row: filas. valor predeterminado.
+        columns: columnas.
+justify-content:alinear las cajas en eje principal.
+Valores: center,flex-start,flex-end,space-beetwen(espacio entre cajas) space-around(espacio entre cajas y bordes) space-evenly(espacio igual entre bordes y cajas)
+align-items: alinea los items en el eje cruzado al principal.
+valores: strecht(default) estira los items para llenar el eje cruzado.
+flex-start: arriba por ej si el eje cruzado es vertical.
+flex-end: abajo si el eje principal es el vertical.
+center: centrado.
+baseline: alinea el texto en la line de base. (para notarlo debemos cambiar la font size de las fuentes de las cajas.
+*/
+
+
+
+
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+.contenedor{
+border: 4px double red;
+display: flex;
+flex-direction: row;
+align-items:  baseline;
+
+height: 800px;
+
+}
+.caja1,
+.caja2,
+.caja3,
+.caja4,
+.caja5,
+.caja6
+{
+border: 2px solid black;
+background-color: aquamarine;
+height: 750px;
+margin-bottom: 5px;
+}
+.caja1{
+    font-size: 22px;
+    
+}
+.caja3{
+    font-size: 26px;
+}
+

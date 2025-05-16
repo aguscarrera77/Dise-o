@@ -22,8 +22,9 @@ line trought/overline.
 text-transform: transformar minuscula a mayuscula y mayuscula a minuscula de la fuente. valores:uppercase/lowercase.
 fuente externa: usamos google fonts.Copiamos codigo Get embed code.
 box-sizing:contiene el tamaño de las cajas al tomar la suma del padding o del margin. Dos valores content-box y border
-
 -box.
+Unidades de Medida:
+rem:
 */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
