@@ -1,4 +1,5 @@
 /*   
+display flex: las cajas se alinean en una fila. Si cambio el eje en las columnas.
 flex-direction:definir la direccion del eje para marcar el flujo de las cajas.
 valores: row: filas. valor predeterminado.
         columns: columnas.
@@ -26,10 +27,11 @@ box-sizing: border-box;
 .contenedor{
 border: 4px double red;
 display: flex;
-flex-direction: row;
-align-items:  baseline;
+flex-direction: column;
+flex-wrap: wrap;
 
-height: 800px;
+
+
 
 }
 .caja1,
@@ -41,14 +43,9 @@ height: 800px;
 {
 border: 2px solid black;
 background-color: aquamarine;
-height: 750px;
 margin-bottom: 5px;
-}
-.caja1{
-    font-size: 22px;
-    
-}
-.caja3{
-    font-size: 26px;
+width: 300px;
+
+
 }
 
