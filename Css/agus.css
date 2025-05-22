@@ -28,7 +28,7 @@ box-sizing: border-box;
 border: 4px double red;
 display: flex;
 flex-direction: column;
-flex-wrap: wrap;
+height: 900px;
 
 
 
