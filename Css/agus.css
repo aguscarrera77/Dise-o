@@ -11,6 +11,13 @@ flex-start: arriba por ej si el eje cruzado es vertical.
 flex-end: abajo si el eje principal es el vertical.
 center: centrado.
 baseline: alinea el texto en la line de base. (para notarlo debemos cambiar la font size de las fuentes de las cajas.
+flex-wrap: crea una nueva linea si la suma del ancho de las cajas super al ancho del contenedor.
+valores: wrap,wrap-reverse,nowrap(viene por defecto).
+align-content:ordena las cajas en el eje cruzado al eje principal.
+Requisitos para que funcione:
+1.flex-wrap este activo.
+2.Tiene que ser en casos de multifila o multicolumnas.
+
 */
 
 
@@ -27,7 +34,11 @@ box-sizing: border-box;
 .contenedor{
 border: 4px double red;
 display: flex;
-flex-direction: column;
+
+width: 1200px;
+gap: 0.5em;
+flex-wrap: wrap;
+align-content: space-evenly;
 height: 900px;
 
 
@@ -44,8 +55,6 @@ height: 900px;
 border: 2px solid black;
 background-color: aquamarine;
 margin-bottom: 5px;
-width: 300px;
-
-
+width: 450px;
 }
 

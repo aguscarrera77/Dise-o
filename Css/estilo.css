@@ -82,9 +82,7 @@ nav {
 
  .menu1{
 border:4px double blueviolet;
-display: flex;
-list-style-type: none;
-justify-content: flex-start;
+
 
 
 
@@ -154,6 +152,15 @@ border-color: aquamarine;
 border-width: 4px;
 border-style: solid;
 border-radius:8px ;
+
+
+}
+
+.form-columns{
+display: flex;
+border:2px solid black;
+justify-content: space-between;
+
 
 
 }
