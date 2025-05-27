@@ -116,7 +116,8 @@ font-weight:lighter;
 
 input{
 
-  color:rgb(59, 2, 2);  
+  color:rgb(59, 2, 2);
+  width: 70%;
 }
  
 legend {
@@ -152,15 +153,59 @@ border-color: aquamarine;
 border-width: 4px;
 border-style: solid;
 border-radius:8px ;
+width: 1200px;
+
 
 
 }
 
-.form-columns{
+.form-columns .fila{
 display: flex;
-border:2px solid black;
-justify-content: space-between;
+
+align-items: center;
+gap: 1.5em;
+}
+.fila label,
+.fila input{
+flex:1 1 48%;
+
+}
+
+.form-file{
+  margin-top: 10px;
+  margin-bottom: 1.5em;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-comments textarea{
+  display: block;
+width:90%;
+margin:10px auto;
+
+}
+.form-comments label{
+display: flex;
+justify-content: center;
+}
+.form-buttons{
+display: flex;
+justify-content: center;
 
 
+}
+.boton{
+width: 150px;
+padding: 5px;
+border-radius: 10px;
+font-weight: bold;
+margin:8px 10px ;
+
+}
+
+.boton:hover{
+color:beige;
+background-color:#150909;
 
 }
