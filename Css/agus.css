@@ -19,7 +19,31 @@ Requisitos para que funcione:
 2.Tiene que ser en casos de multifila o multicolumnas.
 
 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.principal{
+background: #333;
+color:white;
+text-align: center;
+padding:1em;
 
 
+}
+
+.contenedor div{
+background-color: #ccc;
+text-align: center;
+padding:1.2em;
+border: 2px black solid;
 
 
+}
