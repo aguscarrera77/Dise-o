@@ -42,7 +42,7 @@ box-sizing:border-box ;/* contiene el ancho(width) y alto (height) de la caja ad
 body {
 color:#333333;
 padding: 20px;
-background-color: #f4f0eb;
+background-color: #fdfdfd;
 
 
 }
@@ -70,13 +70,14 @@ text-decoration: underline;
   width: 340px;
   height: auto;
   border-radius: 0.8em;
+  text-align: center;
 }
 
 main{
 display: flex;
+flex-direction: column;
 justify-content: space-around;
-align-items: flex-start;
-flex-wrap: wrap;
+
 padding:1.4rem;
 gap: 1em;
   border: 2px solid  rgb(139, 139, 139) ;
@@ -89,20 +90,29 @@ gap: 1em;
 main section,
 main article,
 main nav{
-flex:1 1 800px;
+
 border: 1px solid #ccc ;
-
-
-
-}
-.menu1{
-
-
-
-
-
 }
 
+.secciones{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.secciones section{
+flex: 1 1 48%;
+height: 840px;
+border: 2px solid #333333;
+box-sizing: border-box;
+gap: 1em;
+
+}
+.article-asociate {
+  width: 98%;
+  box-sizing: border-box;
+  margin: 1em auto;
+}
 nav {
 
   border: 2px solid rgb(226, 209, 209);
@@ -112,7 +122,8 @@ nav {
 
 .menu1{
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
+
 list-style-type: none;
 padding: 0;
 
@@ -126,7 +137,7 @@ padding: 0;
  
 .menu1 li{
 background-color: #ccc;
-
+width: 10em;
 border-radius: 10px;
 
 
@@ -139,12 +150,27 @@ nav .menu1 li a{
 text-decoration: none;
 display: block;
 padding: 10px;
+text-align: center;
 
 }
+.info-ipfl{
+  display: flex;
+}
+.ipfl-logo{
 
+  width: 30%;
+  float:right;
+  margin: 0.8rem;
+  box-sizing: border-box;
+  
 
+  
+}
 
-
+.info-ipfl p{
+  padding:0.8em ;
+  margin: 0.8em;
+}
 
 label {
 font-family:Arial, Helvetica, sans-serif ;

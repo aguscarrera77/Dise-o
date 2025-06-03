@@ -19,31 +19,91 @@ Requisitos para que funcione:
 2.Tiene que ser en casos de multifila o multicolumnas.
 
 */
-* {
-  box-sizing: border-box;
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
+body{
   font-family: sans-serif;
   padding: 20px;
 }
-
 .principal{
-background: #333;
-color:white;
-text-align: center;
-padding:1em;
-
+  background: #333;
+  color:white;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.contenedor{
+display: flex;
+justify-content: center;
+align-items: center;
+gap:0.8em;
+padding: 1.5em;
+background: #e0f7fa;
+height: 400px;
 
 }
 
 .contenedor div{
-background-color: #ccc;
+background-color: #7cb342;
+color: white;
 text-align: center;
-padding:1.2em;
-border: 2px black solid;
+font-weight: bold;
+flex: 0 1 150px;
+
 
 
 }
+
+/* Responsive permite que el diseño original mantenga su accesibilidad y su navegabilidad en cuelquier dispositivo en donde lo veas. Debe comenzar al final de la ultima etiqueta de nuestro diseño. Y la sintasis es @media (valor del disposito){
+caja {propiedad:valor;}
+}
+
+
+
+
+*/
+@media(max-width:600px)
+{
+.contenedor{ 
+  flex-direction: column;
+  background-color: #e57373;
+}
+.contenedor div{
+width: 100%;
+color: black;
+font-size: 1.2em;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+/* Responsive comienzo con una media-query @media(orden del tamaño)
+@media (max-width:600px){
+.contenedor{ background: #f2d06b;}
+.contenedor div{
+flex:1 1 100%;
+background: #02e7ef;
+color: black;
+font-size: 1.2em;
+transform:scale(1.1);
+
+
+
+}
+
+
+}*/
