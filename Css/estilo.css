@@ -65,6 +65,7 @@ justify-content: space-between;
 
 text-align: center;
 text-decoration: underline;
+text-shadow: 4px 4px 8px rgb(27, 26, 26);
 }
 .logo-empresa{
   width: 340px;
@@ -102,10 +103,12 @@ border: 1px solid #ccc ;
 }
 .secciones section{
 flex: 1 1 48%;
-height: 840px;
+min-height: 400px;
 border: 2px solid #333333;
 box-sizing: border-box;
 gap: 1em;
+padding: 1em;
+border:1px solid #ccc
 
 }
 .article-asociate {
@@ -171,7 +174,11 @@ text-align: center;
   padding:0.8em ;
   margin: 0.8em;
 }
-
+.logo-empresa,
+.ipfl-logo{
+  max-width: 100%;
+  height: auto;
+}
 label {
 font-family:Arial, Helvetica, sans-serif ;
 color:cornflowerblue;
@@ -182,6 +189,14 @@ input{
 
   color:rgb(59, 2, 2);
   width: 70%;
+}
+input,textarea{
+width: 100%;
+padding: 0.5rem;
+margin: 1rem;
+border-radius: 8px;
+border: 1px solid #ccc;
+
 }
  
 legend {
@@ -271,5 +286,27 @@ margin:8px 10px ;
 .boton:hover{
 color:beige;
 background-color:#150909;
+
+}
+@media screen and (max-width:1024px)
+{
+header{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5em;
+  
+}
+.secciones{
+  flex-direction: column;
+  gap: 2em;
+}
+
+
+
+
+
+
+
 
 }
