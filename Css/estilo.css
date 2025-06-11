@@ -51,7 +51,7 @@ background-color: #fdfdfd;
 header {
 display: flex;
 justify-content: space-between;
-
+align-items: center;
   background-color:#e8e8f2 ;
   width: 100%;
   border-radius: 8px;
@@ -59,20 +59,22 @@ justify-content: space-between;
   margin-bottom: 10px;
   
   }
-
+/*AGREGAR FLEX-WRAP*/
 
 .titulo-header {
 
-text-align: center;
 text-decoration: underline;
 text-shadow: 4px 4px 8px rgb(27, 26, 26);
+
 }
+/*AGREGAR FLEX 1 1 300PX*/
 .logo-empresa{
   width: 340px;
   height: auto;
   border-radius: 0.8em;
   text-align: center;
 }
+/*AGREGAR MAX WIDTH 100%*/
 
 main{
 display: flex;
@@ -87,13 +89,14 @@ gap: 1em;
   margin-bottom: 10px;
 
 }
-
+/* AGREGAR BOX-SIZING*/
 main section,
 main article,
 main nav{
 
 border: 1px solid #ccc ;
 }
+/*AGREGAR PADDING 1EM O BOX SIZING*/
 
 .secciones{
   display: flex;
@@ -111,11 +114,13 @@ padding: 1em;
 border:1px solid #ccc
 
 }
+/*SACAR GAP*/
 .article-asociate {
   width: 98%;
   box-sizing: border-box;
   margin: 1em auto;
 }
+/*PADDING 1EM Y BORDER 1PX #CCC*/
 nav {
 
   border: 2px solid rgb(226, 209, 209);
@@ -129,7 +134,7 @@ justify-content: space-around;
 
 list-style-type: none;
 padding: 0;
-
+/*AGREGAR FLEX WRAP Y GAP 0.8 EM*/
 
 
 
@@ -156,8 +161,23 @@ padding: 10px;
 text-align: center;
 
 }
+
+.card-img-top{
+width: 100%;
+height: auto;
+}
+
+.logoCoop{
+width: auto;
+height: 310px;
+
+
+
+}
+
 .info-ipfl{
   display: flex;
+  /* BORDER, MARGIN BOTTOM 1.4EM,GAP 1 FLEX WRAP BOX SIZING*/
 }
 .ipfl-logo{
 
@@ -165,7 +185,7 @@ text-align: center;
   float:right;
   margin: 0.8rem;
   box-sizing: border-box;
-  
+  /*AGREGAR PADDIN*/
 
   
 }
@@ -233,9 +253,15 @@ border-width: 4px;
 border-style: solid;
 border-radius:8px ;
 width: 1200px;
+margin: 2em auto;
+box-sizing: border-box;
+padding: 1em 2em;
 
 
 
+}
+fieldset{
+  border: none;
 }
 
 .form-columns .fila{
@@ -243,10 +269,13 @@ display: flex;
 
 align-items: center;
 gap: 1.5em;
+margin-bottom: 1.5em;
 }
 .fila label,
 .fila input{
 flex:1 1 48%;
+width: auto;
+margin: 0;
 
 }
 
@@ -286,27 +315,5 @@ margin:8px 10px ;
 .boton:hover{
 color:beige;
 background-color:#150909;
-
-}
-@media screen and (max-width:1024px)
-{
-header{
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1.5em;
-  
-}
-.secciones{
-  flex-direction: column;
-  gap: 2em;
-}
-
-
-
-
-
-
-
 
 }

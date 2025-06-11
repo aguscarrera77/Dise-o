@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primer archivo Html.</title>
    <link rel="stylesheet" href="Css/estilo.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -19,8 +21,34 @@
    </header>
 <main>
    <div class="secciones">
-<section class="cursos"><h1>Cursos</h1></section>
-<section class="compras"><h1>Compras</h1></section>
+<section class="cursos">
+<div class="card" style="width: 100%;">
+  <img src="Imagenes/cursoCoc.jpg" class="card-img-top" alt="cursoCocina">
+  <div class="card-body">
+    <h5 class="card-title">Cursos Disponibles.</h5>
+    <p class="card-text">Hace click y podes ver la grilla de cursos del Centro de Formacion 403. Inscribite ya!!!!</p>
+    <a href="cursos.html" class="btn btn-primary"> Chequea...</a>
+  </div>
+</div>
+
+
+
+</section>
+<section class="compras">
+
+            <div class="card" style="width: 100%;">
+  <img src="Imagenes/logoCoop.png" class="logoCoop" alt="logoCoop">
+  <div class="card-body">
+    <h5 class="card-title">Desarrollo de la Cooperadora.</h5>
+    <p class="card-text">Conoce las acciones de nuestra cooperadora.</p>
+    <a href="cooperadora.html " class="btn btn-primary">Hace click.</a>
+  </div>
+</div>
+
+
+
+
+</section>
    </div>
 <article class="article-asociate"><h3>Publicidad Asociate.</h3></article>
 
@@ -43,8 +71,33 @@
    <img src="Imagenes/Ipfl.jpeg" alt="logo-ipfl" class="ipfl-logo">
    <p>IPFL, en el contexto de la Provincia de Buenos Aires, significa Instituto Provincial de Formación Laboral. Es una institución del Ministerio de Trabajo que coordina, supervisa y asiste a los Centros de Formación Laboral (CFL) en la provincia, ofreciendo cursos y trayectos formativos gratuitos y reconocidos oficialmente. 
    El IPFL busca fortalecer la oferta de formación laboral, adaptándola a las necesidades locales y productivas de cada distrito, así como a las demandas del mercado laboral. 
-   En resumen, el IPFL es el organismo provincial que se encarga de la formación laboral en Buenos Aires, con el objetivo de mejorar las competencias de los trabajadores y facilitar su acceso al empleo</p></article>
-<aside class="galeria"><h3>Slide de fotos</h3></aside>
+   En resumen, el IPFL es el organismo provincial que se encarga de la formación laboral en Buenos Aires, con el objetivo de mejorar las competencias de los trabajadores y facilitar su acceso al empleo.</p></article>
+<aside class="galeria">
+
+            <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+</aside>
 
 
 
