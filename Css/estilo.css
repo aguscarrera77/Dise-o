@@ -29,6 +29,9 @@ rem:
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 * {
 padding: 0;/*Reseteo la configuracion de los navegadores*/
@@ -57,24 +60,51 @@ align-items: center;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 1.5em;
   
   }
-/*AGREGAR FLEX-WRAP*/
+
 
 .titulo-header {
-
+text-align: center;
 text-decoration: underline;
 text-shadow: 4px 4px 8px rgb(27, 26, 26);
+max-width: 400px;
 
 }
-/*AGREGAR FLEX 1 1 300PX*/
 .logo-empresa{
-  width: 340px;
+  width: 280px;
   height: auto;
   border-radius: 0.8em;
   text-align: center;
+  flex:0 0 200px;
 }
-/*AGREGAR MAX WIDTH 100%*/
+.form-login{
+  max-width: 200px;
+  font-size: 0.8em;
+
+
+}
+.form-login .form-label{
+font-size: 0.9em;
+
+
+}
+.form-login .form-text{
+
+ font-size: 0.9em; 
+}
+.form-login input{
+font-size:xx-small;
+
+
+}
+.form-login button{
+padding:0.3em 0.7em;
+font-size: 0.75em;
+
+}
 
 main{
 display: flex;
@@ -89,14 +119,15 @@ gap: 1em;
   margin-bottom: 10px;
 
 }
-/* AGREGAR BOX-SIZING*/
+
 main section,
 main article,
 main nav{
 
 border: 1px solid #ccc ;
+padding: 1.25em;
 }
-/*AGREGAR PADDING 1EM O BOX SIZING*/
+
 
 .secciones{
   display: flex;
@@ -107,34 +138,34 @@ border: 1px solid #ccc ;
 .secciones section{
 flex: 1 1 48%;
 min-height: 400px;
-border: 2px solid #333333;
+
 box-sizing: border-box;
 gap: 1em;
 padding: 1em;
 border:1px solid #ccc
 
 }
-/*SACAR GAP*/
 .article-asociate {
   width: 98%;
-  box-sizing: border-box;
-  margin: 1em auto;
+  padding:1.25em;
+margin: 1em auto;
 }
-/*PADDING 1EM Y BORDER 1PX #CCC*/
-nav {
 
+nav {
+  border-radius: 10px;
   border: 2px solid rgb(226, 209, 209);
   padding:20px ;
   margin:10px 0;
+  background-color: #f8f9fa;
 }
 
 .menu1{
 display: flex;
 justify-content: space-around;
-
+flex-wrap: wrap;
 list-style-type: none;
 padding: 0;
-/*AGREGAR FLEX WRAP Y GAP 0.8 EM*/
+gap: 1em;
 
 
 
@@ -147,6 +178,7 @@ padding: 0;
 background-color: #ccc;
 width: 10em;
 border-radius: 10px;
+overflow: hidden;
 
 
 
@@ -159,7 +191,8 @@ text-decoration: none;
 display: block;
 padding: 10px;
 text-align: center;
-
+font-weight: 500;
+transition:color 0.8s ease;
 }
 
 .card-img-top{
