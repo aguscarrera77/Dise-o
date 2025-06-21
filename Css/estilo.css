@@ -83,7 +83,8 @@ max-width: 400px;
 .form-login{
   max-width: 200px;
   font-size: 0.8em;
-
+  display: flex;
+flex-direction: column;
 
 }
 .form-login .form-label{
@@ -145,6 +146,20 @@ padding: 1em;
 border:1px solid #ccc
 
 }
+
+
+.card-img{
+height: 450px;
+overflow: hidden;
+
+}
+.img-card{
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+
 .article-asociate {
   width: 98%;
   padding:1.25em;
@@ -195,14 +210,8 @@ font-weight: 500;
 transition:color 0.8s ease;
 }
 
-.card-img-top{
-width: 100%;
-height: auto;
-}
-
-.logoCoop{
-width: auto;
-height: 310px;
+.menu1 li a:hover{
+color:rgb(227, 140, 25);
 
 
 
@@ -210,28 +219,91 @@ height: 310px;
 
 .info-ipfl{
   display: flex;
-  /* BORDER, MARGIN BOTTOM 1.4EM,GAP 1 FLEX WRAP BOX SIZING*/
-}
-.ipfl-logo{
-
-  width: 30%;
-  float:right;
-  margin: 0.8rem;
-  box-sizing: border-box;
-  /*AGREGAR PADDIN*/
+  border:1px solid black;
+  border-radius: 10px;
+  background: #f9f9f9;
+  padding:0.8em;
+  
+  align-items: center;
+  gap:1em;
 
   
 }
-
-.info-ipfl p{
-  padding:0.8em ;
-  margin: 0.8em;
-}
-.logo-empresa,
 .ipfl-logo{
-  max-width: 100%;
-  height: auto;
+flex:0 0 200px;
+max-width: 300px;
+border-radius: 10px;
+height: auto;
+box-shadow: 0px 2px 5px rgb(0,0,0.1);
+
+
+  
+
+  
 }
+/*Agrege un div y encerre al h3 y al parrafo para tener control del flexbox*/
+.info-texto{
+  flex:1 1 300px;
+  color:#333;
+
+}
+.info-ipfl h3{
+color:#0d6efd;
+font-size: 1.2em;
+margin-top:0.2em;
+text-decoration: underline;
+
+
+}
+.info-ipfl p{
+margin: 0.5em 0em;
+line-height: 1.5;
+
+
+
+}
+.galeria{
+margin-top: 1em;
+padding: 1em;
+
+
+
+}
+.carrusel-galeria{
+max-width: 1000px;
+margin: auto;
+padding: 1em;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0px 4px 10px rgb(0,0,0.15);
+
+
+}
+.carrusel-galeria img{
+border-radius: 10px;
+object-fit: cover;
+
+
+}
+.carousel-item{
+  height: 500px;
+  object-fit: contain;
+  max-height: 550px;
+  
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%; 
+  background-color:  black;
+  padding: 1.2em;
+}
+
+
+
 label {
 font-family:Arial, Helvetica, sans-serif ;
 color:cornflowerblue;
@@ -259,21 +331,6 @@ font-style: bold;
 }
 
 
-.info-ipfl{
-
-  border:5px solid #023c02;
-  
-  
-  
-  }
-  .info-ipfl p{
-  font-family:"Roboto" ;
-  
-  }
-  .galeria{
-    border: 5px dashed brown;
-    text-align: center;
-  }
 
 footer{
 width: 90%;
