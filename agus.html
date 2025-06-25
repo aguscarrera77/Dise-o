@@ -2,199 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" , initial-scale="1.0">
+    
+    <title>One page</title>
     
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="Css/agus.css">
 </head>
 <body>
- 
-
-   <header> 
-    
-    <form class="form-loggin p-3 bg-light rounded shadow-sm">
-  <div class="form-group mb-3">
-    <label for="exampleInputEmail1" class="form-label fw-semibold">Email address</label>
-    <input type="email" class="form-control m-1" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">La informacion nunca sera compartida.</small>
+ <header class="encabezado border border-primary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mi empresa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto.</a>
+        </li>
+        
+      </ul>
+    </div>
   </div>
-    </form>
-  
-      <h1 class="titulo-header">Cooperadora 403.</h1>
-      <img src="Imagenes/logo403.jpg" alt="logo-empresa" class="logo-empresa">
-    
-   </header>
-<main>
-   <div class="secciones">
-<section class="cursos">
-<div class="card h-100 shadow-sm" style="width: 100%;">
-<div class="card-img">
-  <img src="Imagenes/cursoCoc.jpg" class="img-card" alt="cursoCocina">
-</div>
-
-  <div class="card-body">
-    <h5 class="card-title">Cursos Disponibles.</h5>
-    <p class="card-text">Hace click y podes ver la grilla de cursos del Centro de Formacion 403. Inscribite ya!!!!</p>
-    <a href="cursos.html" class="btn btn-primary"> Chequea...</a>
-  </div>
-</div>
-
-
-
-</section>
-<section class="compras">
-<div class="card h-100 shadow-sm" style="width: 100%;">
-  <div class="card-img">
-  <img src="Imagenes/coopLogo.jpg" class="img-card" alt="logoCoop">
-  </div>
-
-
-  <div class="card-body">
-    <h5 class="card-title">Desarrollo de la Cooperadora.</h5>
-    <p class="card-text">Conoce las acciones de nuestra cooperadora. Colaboracion de nuestros alumnos sus aportes.</p>
-    <a href="cooperadora.html " class="btn btn-primary">Hace click.</a>
-  </div>
-</div>
-
-
-
-
-</section>
-   </div>
-<article class="article-asociate"><h3>Publicidad Asociate.</h3></article>
-
-
-<nav>
-   
-<ul class="menu1">
-<li><a href="">Home</a></li>
-<li><a href="">Cursos</a></li>
-<li><a href="">Nosotros</a></li>
-<li><a href="">Contacto</a></li>
-
-</ul>
-
 </nav>
+
+ </header>
+<main>
+<section class="pag1">
+  <header>
+<h2>Servicios</h2>
+</header>
+<div class="container">
+  <div class="row text-warning">
+    <div class="col">
+      Contenido 1
+    </div>
+    <div class="col">
+      Contenido 2
+    </div>
+  </div>
+</div>
+<footer class="pie-pag1 border p-5 rounded">
+<button class="bg-primary rounded p-1 text-warning">Inicio</button>
+
+</footer>
+
+
+
+
+</section>
+<section class="pag2">
+  <header>
+<h2>Mi empresa</h2>
+  </header>
+<div class="container">
+  <div class="row text-success">
+    <div class="col">
+      Contenido 1
+    </div>
+    <div class="col">
+      Contenido 2
+    </div>
+  </div>
+</div>
+<footer class="pie-pag2 border p-5 rounded">
+<button class="bg-primary p-1 rounded text-ligth">Inicio</button>
+
+</footer>
+
+</section>
+<section class="3">
+<header>
+<h2>Contacto.</h2>
+</header>
+<div class="container">
+  <div class="row text-primary">
+    <div class="col">
+      Contenido 1
+    </div>
+    <div class="col">
+      Contenido 2
+    </div>
+  </div>
+</div>
+<footer class="pie-pag2 border p-5 rounded">
+<button class="bg-dark p-1 rounded text-danger">Inicio</button>
+
+</footer>
+</section>
+
+
+
+
+
+
+ 
 </main>
 
+<footer class="pie-pagina border border-dark rounded p-3 d-flex justify-content-center container text-center">
 
-<article class="info-ipfl">
-   
-  <img src="Imagenes/Ipfl.jpeg" alt="logo-ipfl" class="ipfl-logo">
-  <div class="ipfl-texto">
-   <h3>Que es el IPFL.</h3>
-   <p>IPFL, en el contexto de la Provincia de Buenos Aires, significa Instituto Provincial de Formación Laboral. Es una institución del Ministerio de Trabajo que coordina, supervisa y asiste a los Centros de Formación Laboral (CFL) en la provincia, ofreciendo cursos y trayectos formativos gratuitos y reconocidos oficialmente. 
-   El IPFL busca fortalecer la oferta de formación laboral, adaptándola a las necesidades locales y productivas de cada distrito, así como a las demandas del mercado laboral. 
-   En resumen, el IPFL es el organismo provincial que se encarga de la formación laboral en Buenos Aires, con el objetivo de mejorar las competencias de los trabajadores y facilitar su acceso al empleo.</p>
-  </div>
-  
-  </article>
-
-<aside class="galeria">
-  
-            <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="Imagenes/cocina.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block bg-dark">
-        <h3>Curso de Cocina</h3>
-        <p>Aprende tecnicas de cocina practica y saludable.</p>
-
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="Imagenes/programacion.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item ">
-      <img src="Imagenes/textil.webp" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</aside>
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>
-    <form action="dise.html" method="post"  class="formulario">
-      <fieldset>
-        
-         <legend>Complete sus datos.</legend>
-
-<div class="form-columns">
-
-   <div class="fila">
-  <label for="name">Nombre</label> 
-      <input type="text" id="name" name="nombre" placeholder="Nombre">
-   <label for="apellido">Apellido</label>
-   <input type="text" name="apellido" id="apellido">
-   </div>
-   <div class="fila">
-   <label for="mail">Correo Electronico.</label>
-   <input type="email" id="mail">
-   <label for="password">Contraseña.</label>
-   <input type="password" name="contraseña" maxlength="10" id="password" required>
-   </div>
-   <div class="fila">
-   <label for="dni">Documento</label>
-   <input type="number" id="dni">
-   <label for="date">Fecha Nac.</label>
-   <input type="date" name="fecha_nacimiento" id="date">
-</div>
-</div>
-
-<div class="form-file">
-   <label for="archivo">Subir Archivos.</label>
-<input type="file" id="archivo" >
-</div>
-
-<div class="form-comments">
-<label for="comentarios">Dejanos tu comentario.</label>
-<textarea name="texto" id="comentarios" cols="10" rows="10"></textarea>
-</div>
-  <div class="form-buttons">
-   <input type="submit" value="Enviar" class="boton">
-   <input type="reset" value="Restablecer" class="boton">
-  </div>
-
-
-
-
-
-
-
-
-</fieldset>
-      
-    </form>
-   
+<button type="button" class="btn btn-primary"><i class="bi bi-envelope-check-fill text-center"></i></button>
 </footer>
+  
+
+
+
+
+
+
+      
+
     
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   
 </body>
 </html>
+
+<!-- 
+  <main> envuelve todo el contenido dando importancia a todas las secciones. Las secciones estan dentro de mi index y no en otros html.
+  Uso esta estructura con <header> y <footer> dentro de cada <section> 
+  para darle jerarquía semántica y visual a cada bloque de contenido.
+
+  <header>: destaca el título o introducción principal de la sección.
+  <footer>: agrupa acciones o elementos de cierre relacionados con esa sección.
+
+  Esto mejora la organización, la comprensión del contenido y también favorece la accesibilidad.
+
+  Claramente esta one page tiene secciones separadas. 
+  SI NUESTRA ONE PAGE TIENE SECCIONES EN VENTANAS EMERGENTES NO ES NECESARIO ESTE MODELO.
+-->
