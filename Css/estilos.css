@@ -1,10 +1,22 @@
-.titulo-header {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
-}
+   body {
+      background-color: #ff00ff;
+      color: #00ffff;
+      font-family: sans-serif;
+    }
+    header, footer {
+      background-color: #ffff00;
+      color: #000;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      padding: 2rem;
+    }
+    button {
+      background-color: #00ff00;
+      color: #000;
+      padding: 0.5rem;
+      border: none;
+    }
 
-.logo-header {
-  max-height: 80px;
-  object-fit: contain;
-}
+   
