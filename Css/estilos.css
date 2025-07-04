@@ -1,22 +1,27 @@
-   body {
-      background-color: #ff00ff;
-      color: #00ffff;
-      font-family: sans-serif;
-    }
-    header, footer {
-      background-color: #ffff00;
-      color: #000;
-      text-align: center;
-      padding: 1rem;
-    }
-    main {
-      padding: 2rem;
-    }
-    button {
-      background-color: #00ff00;
-      color: #000;
-      padding: 0.5rem;
-      border: none;
-    }
+.cuerpo{
+background-color: aqua;
+color:floralwhite;
+font-family: sans-serif;
 
-   
+}
+
+header,footer{
+background-color: #ffff00;
+color:#000;
+text-align: center;
+padding: 1.2rem;
+
+}
+main{
+padding: 1rem;
+
+}
+
+
+
+button{
+background-color: #00ff00;
+color: #000;
+padding: 0.8em;
+border: none;
+}
