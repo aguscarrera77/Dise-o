@@ -27,7 +27,7 @@ if ciclo que depende de un condicional y la sintaxis es:
 if(condicional){
 codigo.
 }
-si es true se imprime y si es false no se imprime el ciclo.*/
+si es true se imprime y si es false no se imprime el ciclo.
 
 let age=Number(prompt('que edad tenes'));
 
@@ -39,7 +39,7 @@ alert('Usted vayase a otra pagina.');
 
 }
 
-/* genero 2 variables con prompt una valido el usario y la otra password*/
+genero 2 variables con prompt una valido el usario y la otra password
 
 let user=prompt('Ingrese su usuario');
 let password= prompt('Ingreso su password');
@@ -64,7 +64,7 @@ else if(saber==='No'){
 }
 else{alert('Ingresa la palabra correcta.')};
 
-/*Comienzo del ciclo for*/
+Comienzo del ciclo for
 let numero= prompt('Que tabla de multiplicar queres ver');
 
 for(let i=0; i<=10;i++){
@@ -72,3 +72,32 @@ for(let i=0; i<=10;i++){
 console.log(numero+'x'+i+'='+(numero*i));
 
 }
+
+
+let contador=0;
+
+for(let i=0;i<=100;i++){
+
+if(i % 2 ===0)
+{  contador++;}
+
+}
+
+console.log('La cantidad de pares que hay entre 0 y 100 es: ' + contador);*/
+
+let mensaje='Bienvenido al sitio web construido por mis alumnos.';
+
+document.getElementById('parrafo').innerText=mensaje;
+
+let fondo=' #ffdddd';
+
+document.body.style.backgroundColor=fondo;
+
+let colorFont=' #010000';
+
+document.getElementById('parrafo').style.color= colorFont;
+
+let nombre='Agustin';
+
+document.getElementById('saludo').innerText='Hola '+ nombre + ", bienvenido a tu perfil";
+
