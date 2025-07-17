@@ -83,7 +83,7 @@ if(i % 2 ===0)
 
 }
 
-console.log('La cantidad de pares que hay entre 0 y 100 es: ' + contador);*/
+console.log('La cantidad de pares que hay entre 0 y 100 es: ' + contador);
 
 let mensaje='Bienvenido al sitio web construido por mis alumnos.';
 
@@ -100,4 +100,40 @@ document.getElementById('parrafo').style.color= colorFont;
 let nombre='Agustin';
 
 document.getElementById('saludo').innerText='Hola '+ nombre + ", bienvenido a tu perfil";
+
+*/
+document.getElementById('parrafo').innerText='Este es un mensaje de bienvenida al curso de diseno web. El inicio del curso fue hace varios meses y no logro que me den bola.';
+
+document.getElementById('parrafo').style.color='black';
+document.getElementById('parrafo').style.backgroundColor='white';
+document.getElementById('parrafo').style.fontWeight='bold';
+document.getElementById('parrafo').style.fontSize='22px';
+
+function precioFinal(){
+let precio=document.getElementById('precioInput').value;
+/*value: captura el valor que va en el input*/
+precio=parseFloat(precio);
+/*variable precio acepta decimales con parseFloat
+le agrago if con dos condiciones que dentro del input sea un numero y ademas que sea mayor a 0. Porque estoy calculando precio final con iva de mi producto.
+
+
+*/
+
+if(!isNaN(precio) && precio>0){
+let iva= precio * 0.1735;
+let total= precio + iva;
+
+document.getElementById('resultado').innerText='Su producto con iva es de: $'+total;}
+
+else{
+    document.getElementById('resultado').innerText='INGRESE UN NUMERO VALIDO.'
+}
+
+
+}
+
+
+
+
+
 
