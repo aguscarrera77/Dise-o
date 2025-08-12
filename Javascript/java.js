@@ -190,23 +190,33 @@ const body=document.body;
 body.classList.add('tema-claro');
 
 cambiarFondo.addEventListener('click',function(){
+const icono=cambiarFondo.querySelector('i');
 if(body.classList.contains('tema-claro')){
 body.classList.remove('tema-claro');
 body.classList.add('tema-oscuro');
-cambiarFondo.innerText='Modo Claro.'
+icono.className="bi bi-brightness-high-fill";
+cambiarFondo.innerHTML='<i class="bi bi-brightness-high-fill"></i>';
 
-}else{
-body.classList.remove('tema-oscuro');
-body.classList.add('tema-claro');
-cambiarFondo.innerText='Modo Oscuro';
 
 }
+else{
+body.classList.remove('tema-oscuro');
+body.classList.add('tema-claro');
+icono.className="bi bi-moon-stars-fill";
+cambiarFondo.innerHTML='<i class="bi bi-moon-stars-fill"></i>';
 
 
+}
+}
+);
+
+let boton=document.getElementById('boton-menu');
+let menu=document.getElementById('menu');
+
+boton.addEventListener('click',function(){
+menu.classList.toggle('menu');
+menu.classList.toggle('quitar');
+
+})
 
 
-
-
-
-
-});
