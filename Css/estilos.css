@@ -25,3 +25,43 @@ color: #000;
 padding: 0.8em;
 border: none;
 }
+.caja{
+width: 150px;
+height: 150px;
+background-color: #00ff00;
+margin: 1em;
+
+}
+.boton{
+
+  background-color:rgb(130, 60, 60);  
+}
+
+body.tema-claro{
+background-color: antiquewhite;
+color: black;
+
+}
+body.tema-oscuro{
+background-color: #121212;
+color:antiquewhite
+
+
+}
+.botonColor{
+padding: 0.8em 1em;
+border:none;
+border-radius: 10px;
+cursor: pointer;
+
+
+}
+
+.tema-claro.botonColor{
+background-color: #e0e0e0;
+color: black;
+}
+.tema-oscuro.botonColor{
+background-color: #121212;
+color: antiquewhite;
+}

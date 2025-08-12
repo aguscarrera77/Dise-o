@@ -127,13 +127,86 @@ document.getElementById('resultado').innerText='Su producto con iva es de: $'+to
 
 else{
     document.getElementById('resultado').innerText='INGRESE UN NUMERO VALIDO.'
+
+}}
+/* USO DEL ADDEVENTLISTENER ES UN EVENTO QUE RESPONDE A UN LLAMADO DEL USUARIO ES UN CLICK.
+CHEQUEAR BIEN LOS PUNTOS Y COMAS LOS PARENTISIS Y LAS LLAVES. 
+CHEQUEAR CONDICIONAL IF.
+PUNTO CONCATENA FUNCIONES EN JAVA.*/
+
+function cambiarMedida(medida){
+const caja=document.getElementById('caja');
+if(medida==='chico'){
+caja.style.width='50px';
+caja.style.height='50px';
+}
+else if(medida='mediano'){
+caja.style.width='250px';
+caja.style.height='250px';
+
+}
+else if(medida='grande'){
+caja.style.width='350px';
+caja.style.height='350px'
+
+}
+}
+document.getElementById('btnChico').addEventListener('click',function(){
+  cambiarMedida('chico');
+} );
+
+document.getElementById('btnMediano').addEventListener('click', function(){
+
+cambiarMedida('mediano');
+
+});
+
+
+
+function calcularTotal(){
+let p1=parseInt(document.getElementById('producto1').value);
+let p2=parseInt(document.getElementById('producto2').value);
+let totalDiv=document.getElementById('total');
+if(isNaN(p1)||isNaN(p2)){
+totalDiv.innerText='Por favor, poner un numero entero';
+totalDiv.style.color='red';
+totalDiv.style.fontWeight='bold';
+}else{
+let total=p1+p2;
+totalDiv.innerText='El total es $'+ total;
+totalDiv.style.color='green';
+totalDiv.style.fontWeight='bold';
+
+}
+
+}
+
+document.getElementById('calcular').addEventListener('click',calcularTotal);
+
+
+const cambiarFondo=document.getElementById('cambiarFondo');
+const body=document.body;
+
+body.classList.add('tema-claro');
+
+cambiarFondo.addEventListener('click',function(){
+if(body.classList.contains('tema-claro')){
+body.classList.remove('tema-claro');
+body.classList.add('tema-oscuro');
+cambiarFondo.innerText='Modo Claro.'
+
+}else{
+body.classList.remove('tema-oscuro');
+body.classList.add('tema-claro');
+cambiarFondo.innerText='Modo Oscuro';
+
 }
 
 
-}
 
 
 
 
 
 
+});
