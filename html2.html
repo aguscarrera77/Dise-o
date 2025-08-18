@@ -28,7 +28,12 @@
 <nav id="menu" class="menu">
 <ul class="quitar">
 <li><a href="#">Inicio</a></li>
-<li><a href="#">Pagina1</a></li>
+<li class="menu-item" id="menu-item"><a href="Pagina1.html" target="_blank">Pagina1 <ul class="submenu " id="submenu">
+<li><a href="#"> Programacion Web</a></li>
+<li><a href="#"> Diseño Web</a></li>
+
+
+</ul></a></li>
 <li><a href="#">Contactos</a></li>
 
 </ul>
@@ -72,7 +77,21 @@
  
 <footer>
 
-Todos los derechos estan reservados.
+<form action="" id="mi-formulario">
+<label for="nombre">Nombre</label>
+
+<input type="text" name="name" id="nombre">
+<span id="error" class="error"></span>
+
+<button type="submit">Enviar</button>
+
+
+
+
+
+
+
+</form>
 
  </footer>
 <script src="Javascript/java.js"></script>

@@ -212,11 +212,40 @@ cambiarFondo.innerHTML='<i class="bi bi-moon-stars-fill"></i>';
 
 let boton=document.getElementById('boton-menu');
 let menu=document.getElementById('menu');
+let menuItem=document.getElementById('menu-item');
+let submenu=document.getElementById('submenu');
 
 boton.addEventListener('click',function(){
 menu.classList.toggle('menu');
 menu.classList.toggle('quitar');
 
 })
+
+menuItem.addEventListener('mouseenter',function(){
+submenu.classList.toggle('menu');
+
+});
+
+menuItem.addEventListener('mouseleave',function(){
+submenu.classList.add('menu');
+
+
+});
+
+const formulario=document.getElementById('mi-formulario');
+const nombre=document.getElementById('nombre');
+const error=document.getElementById('error');
+
+formulario.addEventListener('submit',function(evento) {
+  evento.preventDefault();
+  if(nombre.value===''){
+error.innerText="Por favor ingrese un nombre";
+
+  }
+  else{
+    error.innerText='Sus datos fueron enviados.'
+  }
+})
+
 
 

@@ -24,12 +24,34 @@ display: none;
 .menu a{
   text-decoration: none;
 }
+.hover{
+
+background-color: aqua;
+color: #121212;
+
+}
+.submenu{
+background-color: #121212;
+color: aliceblue;
+padding: 0.8em;
+margin-top: 0.5em;
+width: 50%;
+
+
+}
+.submenu li{
+margin:5px 0px;
+
+}
 main{
 padding: 1rem;
 
 }
 
-
+span{
+  color:red;
+  font-weight: bold;
+}
 
 button{
 background-color: #00ff00;
