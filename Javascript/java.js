@@ -247,5 +247,21 @@ error.innerText="Por favor ingrese un nombre";
   }
 })
 
-
-
+document.getElementById('enter').addEventListener('click',function (){
+Swal.fire({
+  title: "Confirmar Compra",
+  text:"Si confirmas la compra,vas al carrito",
+  icon:'warning',
+  showCancelButton:true,
+  confirmButtonText:"Si confirmo la compra",
+  cancelButtonText:'Cancelar comprar',
+  
+}).then((resultado)=>{
+if(resultado.isConfirmed){
+  window.location.href='Pagina1.html';
+}
+else{
+  Swal.fire('Cancelar Compra.');
+}
+});
+});
