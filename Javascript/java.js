@@ -254,7 +254,7 @@ Swal.fire({
   icon:'warning',
   showCancelButton:true,
   confirmButtonText:"Si confirmo la compra",
-  cancelButtonText:'Cancelar comprar',
+  cancelButtonText:'Compra Cancelada.',
   
 }).then((resultado)=>{
 if(resultado.isConfirmed){
@@ -265,3 +265,5 @@ else{
 }
 });
 });
+
+
