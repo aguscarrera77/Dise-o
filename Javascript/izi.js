@@ -34,3 +34,46 @@ iziToast.warning({
 });
 
 });
+
+btnError.addEventListener('click',function(){
+iziToast.error({
+    title: 'Error',
+    message: 'Ocurrio un problema',
+});
+
+})
+
+btnProgreso.addEventListener('click',function(){
+iziToast.show({
+title:'Desea continuar o cerrar?',
+message:'Elegir una opcion',
+position:'center',
+timeout:false,
+theme:'dark',
+progressBar:false,
+progressBarColor:'red',
+progressBarEasing:'linear',
+buttons: [
+        ['<button>Continuar.</button>', function (instance, toast) {
+            iziToast.success({
+    title: 'Usted finalizo su compra',
+    message: 'Gracias totales.',
+    position:'center',
+});
+
+        }, true], // true to focus
+        ['<button>Cerrar</button>', function (instance, toast) {
+            instance.hide({
+                transitionOut: 'fadeOutUp',
+                onClosing: function(instance, toast, closedBy){
+                    console.info('closedBy: ' + closedBy); // The return will be: 'closedBy: buttonName'
+                }
+            }, toast, 'buttonName');
+        }]
+    ],
+
+});
+
+
+ 
+})
