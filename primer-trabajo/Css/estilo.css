@@ -1,0 +1,504 @@
+/*vamos a arrancar la primera linea de css con el indicador universal.
+etiqueta:llama a la etiqueta directamente por el nombre.
+clase: HTML USO class(atributo) . CSSS USO  .(nombre de la clase).
+utilizo el background-color: color de fondo
+background:fondo de cualquier caja.
+font-family:cambia familia de la fuente.
+color:cambia el color de cualquier estructura.
+font-size:cambio tamano a la fuente.
+font-weight:ancho de la fuente.
+font-style:cambia el estilo de la fuente.*
+border: aplica bordes a las cajas. Propiedades:
+border-width: ancho del borde.valores px,em,hv
+border-style: estilo del borde. Valores:solid,double,dotted,dashed.
+border-color:color del borde.
+border-radius: redondea los bordes de la caja. Valores: px,%,etc.
+width: ancho de cualquier elementos o caja.
+height:alto del elemento o caja. valores pixeles,%,em,hv.
+max-width:ancho maximo que puedo darle a una caja.
+text-align: alinear los elementos en el eje horizontal. valores: left center right.
+text-decoration: es darle lineas al texto. valores: underline/none/
+line trought/overline.
+text-transform: transformar minuscula a mayuscula y mayuscula a minuscula de la fuente. valores:uppercase/lowercase.
+fuente externa: usamos google fonts.Copiamos codigo Get embed code.
+box-sizing:contiene el tamaño de las cajas al tomar la suma del padding o del margin. Dos valores content-box y border
+-box.
+Unidades de Medida:
+rem:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+padding: 0;/*Reseteo la configuracion de los navegadores*/
+margin: 0;/*Reseteo la configuracion de los navegadores*/
+
+font-family:"Roboto","PT Serif";
+box-sizing:border-box ;/* contiene el ancho(width) y alto (height) de la caja adhiriendo el margin y el padding.*/
+
+}
+
+body {
+color:#333333;
+padding: 18px;
+background-color: #fdfdfd;
+
+
+}
+
+
+header {
+display: flex;
+flex-direction: row-reverses;
+justify-content: space-between;
+align-items: center;
+  background-color:#e8e8f2 ;
+  width: 100%;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  
+  }
+
+
+.titulo-header {
+text-align: center;
+text-decoration: underline;
+text-shadow: 4px 4px 8px rgb(27, 26, 26);
+max-width: 400px;
+
+}
+.logo-empresa{
+  width: 280px;
+  height: auto;
+  border-radius: 0.8em;
+  text-align: center;
+  flex:0 0 200px;
+}
+.form-login{
+  max-width: 200px;
+  font-size: 0.8em;
+  display: flex;
+flex-direction: column;
+
+}
+.form-login .form-label{
+font-size: 0.9em;
+
+
+}
+.form-login .form-text{
+
+ font-size: 0.9em; 
+}
+.form-login input{
+font-size:xx-small;
+
+
+}
+.form-login button{
+padding:0.3em 0.7em;
+font-size: 0.75em;
+
+}
+
+main{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+padding:1.4rem;
+gap: 1em;
+  border: 2px solid  rgb(139, 139, 139) ;
+  margin: 0 auto;
+  width: 95%;
+  margin-bottom: 10px;
+
+}
+
+main section,
+main article,
+main nav{
+
+border: 1px solid #ccc ;
+padding: 1.25em;
+}
+
+
+.secciones{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.secciones section{
+flex: 1 1 48%;
+min-height: 400px;
+
+box-sizing: border-box;
+gap: 1em;
+padding: 1em;
+border:1px solid #ccc
+
+}
+
+
+.card-img{
+height: 450px;
+overflow: hidden;
+
+}
+.img-card{
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+
+.article-asociate {
+  width: 98%;
+  padding:1.25em;
+margin: 1em auto;
+}
+
+nav {
+  border-radius: 10px;
+  border: 2px solid rgb(226, 209, 209);
+  padding:20px ;
+  margin:10px 0;
+  background-color: #f8f9fa;
+}
+
+.menu1{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+list-style-type: none;
+padding: 0;
+gap: 1em;
+
+
+
+
+
+}
+
+ 
+.menu1 li{
+background-color: #ccc;
+width: 10em;
+border-radius: 10px;
+overflow: hidden;
+
+
+
+
+ }
+
+nav .menu1 li a{
+
+text-decoration: none;
+display: block;
+padding: 10px;
+text-align: center;
+font-weight: 500;
+transition:color 0.8s ease;
+}
+
+.menu1 li a:hover{
+color:rgb(227, 140, 25);
+
+
+
+}
+
+.info-ipfl{
+  display: flex;
+  border:1px solid black;
+  border-radius: 10px;
+  background: #f9f9f9;
+  padding:0.8em;
+  
+  align-items: center;
+  gap:1em;
+
+  
+}
+.ipfl-logo{
+flex:0 0 200px;
+max-width: 300px;
+border-radius: 10px;
+height: auto;
+box-shadow: 0px 2px 5px rgb(0,0,0.1);
+
+
+  
+
+  
+}
+/*Agrege un div y encerre al h3 y al parrafo para tener control del flexbox*/
+.info-texto{
+  flex:1 1 300px;
+  color:#333;
+
+}
+.info-ipfl h3{
+color:#0d6efd;
+font-size: 1.2em;
+margin-top:0.2em;
+text-decoration: underline;
+
+
+}
+.info-ipfl p{
+margin: 0.5em 0em;
+line-height: 1.5;
+
+
+
+}
+.galeria{
+margin-top: 1em;
+padding: 1em;
+
+
+
+}
+.carrusel-galeria{
+max-width: 1000px;
+margin: auto;
+padding: 1em;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0px 4px 10px rgb(0,0,0.15);
+
+
+}
+.carrusel-galeria img{
+border-radius: 10px;
+object-fit: cover;
+
+
+}
+.carousel-item{
+  height: 500px;
+  object-fit: contain;
+  max-height: 550px;
+  
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%; 
+  background-color:  black;
+  padding: 1.2em;
+}
+
+
+
+label {
+font-family:Arial, Helvetica, sans-serif ;
+color:cornflowerblue;
+font-weight:lighter;
+}
+
+input{
+
+  color:rgb(59, 2, 2);
+  width: 70%;
+}
+input,textarea{
+width: 100%;
+padding: 0.5rem;
+margin: 1rem;
+border-radius: 8px;
+border: 1px solid #ccc;
+
+}
+ 
+legend {
+font-size: 45px;
+font-style: bold;
+
+}
+
+
+
+footer{
+width: 90%;
+
+}
+
+.formulario {
+border-color: aquamarine;
+border-width: 4px;
+border-style: solid;
+border-radius:8px ;
+width: 1200px;
+margin: 2em auto;
+box-sizing: border-box;
+padding: 1em 2em;
+
+
+
+}
+fieldset{
+  border: none;
+}
+
+.form-columns .fila{
+display: flex;
+
+align-items: center;
+gap: 1.5em;
+margin-bottom: 1.5em;
+}
+.fila label,
+.fila input{
+flex:1 1 48%;
+width: auto;
+margin: 0;
+
+}
+
+.form-file{
+  margin-top: 10px;
+  margin-bottom: 1.5em;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-comments textarea{
+  display: block;
+width:90%;
+margin:10px auto;
+
+}
+.form-comments label{
+display: flex;
+justify-content: center;
+}
+.form-buttons{
+display: flex;
+justify-content: center;
+
+
+}
+.boton{
+width: 150px;
+padding: 5px;
+border-radius: 10px;
+font-weight: bold;
+margin:8px 10px ;
+
+}
+
+.boton:hover{
+color:beige;
+background-color:#150909;
+
+}
+
+
+@media screen and (max-width: 992px) {
+  header {
+    flex-direction: column ;
+    align-items: center;
+  }
+  .logo-empresa {
+    width: 80%;
+  }
+  .form-login {
+    width: 100%;
+    max-width: none;
+    font-size: 1em;
+  }
+  .secciones {
+    flex-direction: column;
+  }
+  .secciones section {
+    flex: 1 1 100%;
+  }
+   .card-img {
+    height: auto;
+  }
+
+  .img-card {
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+
+  .menu1 {
+    
+    align-items: center;
+  }
+  .menu1 li {
+    width: 80%;
+  }
+  .info-ipfl {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ipfl-logo {
+    width: 80%;
+    max-width: none;
+  }
+  .form-columns .fila {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .form-columns .fila label,
+  .form-columns .fila input {
+    width: 100%;
+  }
+  .formulario {
+    width: 100%;
+  }
+  .form-comments textarea {
+    width: 100%;
+  }
+  .carousel-item {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    padding: 10px;
+  }
+  .titulo-header {
+    font-size: 1.2rem;
+  }
+  nav .menu1 li a {
+    padding: 0.5em;
+    font-size: 1em;
+  }
+    .card-img {
+    height: auto;
+  }
+
+  .img-card {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+
+  .boton {
+    width: 100px;
+    padding: 5px;
+  }
+}

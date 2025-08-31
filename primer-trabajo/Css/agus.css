@@ -1,0 +1,434 @@
+/*   
+display flex: las cajas se alinean en una fila. Si cambio el eje en las columnas.
+flex-direction:definir la direccion del eje para marcar el flujo de las cajas.
+valores: row: filas. valor predeterminado.
+        columns: columnas.
+justify-content:alinear las cajas en eje principal.
+Valores: center,flex-start,flex-end,space-beetwen(espacio entre cajas) space-around(espacio entre cajas y bordes) space-evenly(espacio igual entre bordes y cajas)
+align-items: alinea los items en el eje cruzado al principal.
+valores: strecht(default) estira los items para llenar el eje cruzado.
+flex-start: arriba por ej si el eje cruzado es vertical.
+flex-end: abajo si el eje principal es el vertical.
+center: centrado.
+baseline: alinea el texto en la line de base. (para notarlo debemos cambiar la font size de las fuentes de las cajas.
+flex-wrap: crea una nueva linea si la suma del ancho de las cajas super al ancho del contenedor.
+valores: wrap,wrap-reverse,nowrap(viene por defecto).
+align-content:ordena las cajas en el eje cruzado al eje principal.
+Requisitos para que funcione:
+1.flex-wrap este activo.
+2.Tiene que ser en casos de multifila o multicolumnas.
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+padding: 0;/*Reseteo la configuracion de los navegadores*/
+margin: 0;/*Reseteo la configuracion de los navegadores*/
+
+font-family:"Roboto","PT Serif";
+box-sizing:border-box ;/* contiene el ancho(width) y alto (height) de la caja adhiriendo el margin y el padding.*/
+
+}
+
+body {
+color:#333333;
+padding: 20px;
+background-color: #fdfdfd;
+
+
+}
+
+
+header {
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 1.5em;
+  background-color:#e8e8f2 ;
+  width: 100%;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  
+  }
+/*AGREGAR FLEX-WRAP*/
+
+.titulo-header {
+text-align: center;
+text-decoration: underline;
+text-shadow: 4px 4px 8px rgb(27, 26, 26);
+max-width: 400px;
+
+
+}
+/*AGREGAR FLEX 1 1 300PX*/
+.logo-empresa{
+  width: 280px;
+  height: auto;
+  border-radius: 0.8em;
+  text-align: center;
+  flex:0 0 200px;
+}
+/*AGREGAR MAX WIDTH 100%*/
+.form-loggin,
+.titulo-header{
+flex:1 1 200px;
+
+}
+.form-loggin{
+  max-width: 200px;
+  height: 50%;
+}
+main{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+padding:1.4rem;
+gap: 1em;
+  border: 2px solid  rgb(139, 139, 139) ;
+  margin: 0 auto;
+  width: 95%;
+  margin-bottom: 10px;
+
+}
+/* AGREGAR BOX-SIZING*/
+main section,
+main article,
+main nav{
+
+border: 1px solid #ccc ;
+padding: 1em;
+}
+
+
+.secciones{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.secciones section{
+flex: 1 1 48%;
+min-height: 400px;
+border: 2px solid #333333;
+box-sizing: border-box;
+
+padding: 1em;
+border:1px solid #ccc
+
+}
+
+.article-asociate {
+  width: 98%;
+  box-sizing: border-box;
+  margin: 1em auto;
+  padding: 1.5em;
+}
+
+nav {
+
+  border: 2px solid rgb(226, 209, 209);
+  
+
+  border-radius: 0.8em;
+  background-color: #f8f9fa;
+}
+
+.menu1{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+list-style-type: none;
+padding: 0;
+gap: 0.8em;
+/*AGREGAR FLEX WRAP Y GAP 0.8 EM*/
+
+
+
+
+
+}
+
+ 
+.menu1 li{
+background-color: #ccc;
+width: 10em;
+border-radius: 10px;
+overflow: hidden;
+
+
+
+
+ }
+
+nav .menu1 li a{
+display: block;
+width: 10em;
+color: #333;
+text-decoration: none;
+font-weight: 500;
+padding: 10px;
+text-align: center;
+transition: color 0.5s ease;
+}
+.menu1 a:hover{
+text-decoration: underline;
+color:#0d6efd;
+
+
+
+}
+.card-img{
+height: 500px;
+overflow: hidden;
+
+
+}
+.img-card{
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+.info-ipfl{
+  display: flex;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: #f9f9f9;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  align-items: center;
+  margin-bottom: 1em;
+  /* BORDER, MARGIN BOTTOM 1.4EM,GAP 1 FLEX WRAP BOX SIZING*/
+}
+.ipfl-logo{
+
+  flex:0 1 220px;
+  max-width: 300px;
+  margin: 0.8rem;
+  padding: 1.2em;
+  border-radius: 8px;
+  box-shadow:0px 2px 5px rgb(0,0, 0.1);
+
+}
+.ipfl-texto{
+flex: 1 1 300px;
+color: #333;
+
+}
+.ipfl-texto h3{
+color:#0d6efd;
+font-size: 1.5em;
+margin-top: 0.2em;
+
+}
+
+.info-ipfl p{
+  margin: 0.5em 0em;
+  line-height: 1.5;
+  
+}
+.carousel-item{
+  height: 500px;
+  object-fit: cover;
+}
+
+label {
+font-family:Arial, Helvetica, sans-serif ;
+color:cornflowerblue;
+font-weight:lighter;
+}
+
+input{
+
+  color:rgb(59, 2, 2);
+  width: 70%;
+}
+input,textarea{
+width: 100%;
+padding: 0.5rem;
+margin: 1rem;
+border-radius: 8px;
+border: 1px solid #ccc;
+
+}
+ 
+legend {
+font-size: 45px;
+font-style: bold;
+
+}
+
+
+.info-ipfl{
+
+  border:5px solid #023c02;
+  
+  
+  
+  }
+  .info-ipfl p{
+  font-family:"Roboto" ;
+  
+  }
+  .galeria{
+    border-radius: 10px;
+    text-align: center;
+  }
+
+footer{
+width: 90%;
+
+}
+
+.formulario {
+border-color: aquamarine;
+border-width: 4px;
+border-style: solid;
+border-radius:8px ;
+width: 1200px;
+margin: 2em auto;
+box-sizing: border-box;
+padding: 1em 2em;
+
+
+
+}
+fieldset{
+  border: none;
+}
+
+.form-columns .fila{
+display: flex;
+
+align-items: center;
+gap: 1.5em;
+margin-bottom: 1.5em;
+}
+.fila label,
+.fila input{
+flex:1 1 48%;
+width: auto;
+margin: 0;
+
+}
+
+.form-file{
+  margin-top: 10px;
+  margin-bottom: 1.5em;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-comments textarea{
+  display: block;
+width:90%;
+margin:10px auto;
+
+}
+.form-comments label{
+display: flex;
+justify-content: center;
+}
+.form-buttons{
+display: flex;
+justify-content: center;
+
+
+}
+.boton{
+width: 150px;
+padding: 5px;
+border-radius: 10px;
+font-weight: bold;
+margin:8px 10px ;
+
+}
+
+.boton:hover{
+color:beige;
+background-color:#150909;
+
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form-loggin {
+    max-width: 100%;
+    width: 90%;
+  }
+
+  .logo-empresa {
+    width: 70%;
+    flex: none;
+  }
+
+  .titulo-header {
+    max-width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .secciones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secciones section {
+    flex: 1 1 90%;
+  }
+
+  .formulario {
+    width: 95%;
+    padding: 1em;
+  }
+}
+
+/* Dispositivos tipo móvil (480px para abajo) */
+@media (max-width: 480px) {
+  .menu1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu1 li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-columns .fila {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .ipfl-logo {
+    width: 100%;
+    max-width: none;
+  }
+
+  .carousel-item {
+    height: auto;
+  }
+
+  .card-img {
+    height: auto;
+  }
+
+  .img-card {
+    height: auto;
+  }
+}

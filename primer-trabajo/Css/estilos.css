@@ -1,0 +1,114 @@
+.cuerpo{
+background-color: aqua;
+color:floralwhite;
+font-family: sans-serif;
+
+}
+
+header,footer{
+background-color: #ffff00;
+color:#000;
+
+padding: 1.2rem;
+
+}
+
+.menu{
+display: none;
+
+
+}
+.quitar{
+  list-style-type: none;
+}
+.menu a{
+  text-decoration: none;
+}
+.hover{
+
+background-color: aqua;
+color: #121212;
+
+}
+.submenu{
+background-color: #121212;
+color: aliceblue;
+padding: 0.8em;
+margin-top: 0.5em;
+width: 50%;
+
+
+}
+.submenu li{
+margin:5px 0px;
+
+}
+main{
+padding: 1rem;
+
+}
+
+span{
+  color:red;
+  font-weight: bold;
+}
+
+button{
+background-color: #00ff00;
+color: #000;
+padding: 0.8em;
+border: none;
+}
+.caja{
+width: 150px;
+height: 150px;
+background-color: #00ff00;
+margin: 1em;
+
+}
+.boton{
+
+  background-color:rgb(130, 60, 60);  
+}
+
+body{
+margin: 0;
+transition: background-color 0.5s ease , color 0.5s ease;
+}
+
+body.tema-claro{
+background-color: antiquewhite;
+color: black;
+
+}
+body.tema-oscuro{
+background-color: #121212;
+color:antiquewhite
+
+
+}
+.botonColor{
+padding: 0.8em 1em;
+border:none;
+border-radius: 10px;
+cursor: pointer;
+transition: color 0.2s ease, transform 0.2s ease;
+
+}
+.botonColor:hover{
+
+  transform:scale(1.2);
+}
+
+.botonColor i{
+transition: transform 0.2s ease,color 0.2s ease;
+
+}
+.tema-claro.botonColor{
+background-color: #e0e0e0;
+color: black;
+}
+.tema-oscuro.botonColor{
+background-color: #121212;
+color: antiquewhite;
+}
